@@ -1,0 +1,243 @@
+*{
+    margin: 0px;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*  navegador  */
+.header{
+    background-color: rgb(56, 57, 112);
+    width: 100%;
+    height: 71px;
+    display:flex;
+}
+.h__img{
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+}
+.h__h1{
+    color:white;
+    text-align:left;
+    line-height: 20px;
+    font-size: 24px;
+    padding: 15px;
+} 
+.nav{
+    height: 40px;
+    padding: 15px;
+    text-align: right;
+}
+.nav__ul{
+    list-style-type: none;
+    
+}
+ul li{
+    display: inline-block;
+    padding-right: 150px;
+    
+}
+.nav__a{
+    text-decoration: none;
+    color:white;
+    
+}
+.nav__a:hover{
+    color: white;
+    background-color: red;
+    border-radius: 50px;
+    padding: 10px;
+}
+/* main general */
+.main{
+    background-color: #FFDD83;
+    width: 100%;
+    display: flex;
+}
+/* main equipos */
+.main-equipo{
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+}
+/* main de contacto */
+.main-contacto{
+    width: 100%;
+    height: 674px;
+    background-image: url(/img/dj2.jpg);
+    background-size: cover;
+}
+/* main de inicio */
+.main-inicio{
+    width: 100%;
+    height: 674px;
+    background-image: url(/img/dj2.jpg);
+    background-size: cover;
+}
+/* main de nosotros */
+.main-nosotros{
+    width: 100%;
+    height: 674px;
+    background-image: url(/img/dj2.jpg);
+    background-size: cover;
+}
+/* section de nosotros */
+.section-nos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section__img{
+    width:400px;
+    margin-left: 25px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.section__p{
+    color: rgb(255, 255, 255);
+    margin-left: 25px;
+    margin-top: 30px;
+}
+/* section eventos */
+.section{
+    justify-content: center;
+    align-items: center;
+    display: inline;
+}
+.p{
+    padding: 10px;
+    margin: 10px;
+    background-color:  rgb(56, 57, 112);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+.section__div{
+    padding-left: 0px;
+    
+}
+/* div de equipos */
+.div__equipo{
+    padding-top: 60px;
+    display:flex;
+}
+.div__equipo-2{
+    padding-top: 200px;
+    display:flex;
+}
+.div__equipo-3{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    display:flex;
+}
+/* imagenes de eventos */
+
+.img__cumple ,.img__aleyflor,.img__aleydai, .img__joseyanto, .img__egresado, .img__ceats{
+    width: 300px;
+    padding-right: 10px;
+}
+.img__cumple-18{
+    padding-right: 10px;
+    width: 300px;
+    height: 169px;
+}
+.img__aleyflor-bodega{
+    width: 300px;
+    height: 400px;
+    padding-right:10px ;
+}
+.img__ceats-evento{
+    width: 300px;
+    height: 225px;
+    padding-right:10px ;
+}
+/* imagenes equipos */
+.img__div{
+    width: 250px;
+    height: 200px;
+}
+.img__div-parlante{
+    width: 300px;
+    height: 350px;
+}
+
+
+.section{
+    color: white;
+}
+/* formulario contacto */
+.form{
+    background-color: rgb(56, 57, 112);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    padding: 50px 55px;
+    text-align: center;
+    border-radius: 20px;
+    width: 50%;
+    
+}
+span {
+    color: red;
+}
+.form__h1{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+
+}
+.form__input{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 20px;
+}
+input, textarea{
+    padding: 17px, 25px;
+    border-radius: 20px;
+    border: 2px solid, white;
+    outline: none;
+}
+label {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+/* boton enviar formulario */
+.form__enviar{
+    margin-top: 20px;
+    color: white;
+    border-radius: 20px;
+    height: 30px;
+    font-size: 17px;
+    border:0 ;
+    background-color: rgb(177, 19, 19);
+    cursor: pointer;
+}
+.form__enviar:hover{
+    background-color: red;
+}
+/* footer */
+.footer{
+    background-color: rgb(56, 57, 112);
+    width: 100%;
+    height: 44px;
+}
+/* div del footer */
+.f__div{
+    color: white;
+}
+.div__a{
+    width: 30px;    
+    height: 30px;
+
+}
+/* boton volver arriba */
+.arriba{
+    position:absolute;
+    right: 0px;
+}
