@@ -2,9 +2,6 @@
     margin: 0px;
     font-family: sans-serif;
 }
-html{
-    scroll-behavior: smooth;
-}
 /*  navegador  */
 .header{
     background-color: rgb(56, 57, 112);
@@ -37,7 +34,7 @@ html{
 ul li{
     display: inline-block;
     padding-right: 120px;
-    
+
 }
 .nav__a{
     text-decoration: none;
@@ -52,7 +49,7 @@ ul li{
 }
 /* main general */
 .main{
-    background-color: #FFDD83;
+    background-color: #FFff;
     width: 100%;
     display: flex;
 }
@@ -73,15 +70,21 @@ ul li{
 .main-inicio{
     width: 100%;
     height: 674px;
-    background-image: url(/img/dj2.jpg);
-    background-size: cover;
+    background-color: #655DBB;
+
+}
+/* video dentro de main */
+.video{
+    padding-left: 280px;
+    padding-top: 60px;
+    width: 60%;
+    height: 80%;
 }
 /* main de nosotros */
 .main-nosotros{
     width: 100%;
     height: 674px;
-    background-image: url(/img/dj2.jpg);
-    background-size: cover;
+    background-color:#655DBB ;
 }
 /* section de nosotros */
 .section-nos{
@@ -90,12 +93,17 @@ ul li{
     align-items: center;
 }
 .section__img{
-    width:400px;
+    width:800px;
+    height: 500px;
     margin-left: 25px;
-    margin-top: 30px;
+    margin-top: 80px;
     margin-right: 50px;
+    border-radius: 10px;
 }
 .section__p{
+    font-size: 30px;
+    font-style:italic;
+
     color: rgb(255, 255, 255);
     margin-left: 25px;
     margin-top: 30px;
@@ -173,7 +181,7 @@ ul li{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 20%;
+    top: 16%;
     left: 20%;
     padding: 50px 55px;
     text-align: center;
@@ -200,6 +208,8 @@ input, textarea{
     border-radius: 20px;
     border: 2px solid, white;
     outline: none;
+    margin-bottom: 10px;
+    
 }
 label {
     color: rgb(255, 255, 255);
@@ -226,6 +236,7 @@ label {
     background-color: rgb(56, 57, 112);
     width: 100%;
     height: 44px;
+    bottom: 0%;
 }
 /* div del footer */
 .f__div{
