@@ -1,15 +1,22 @@
+
 *{
     margin: 0px;
     font-family: sans-serif;
 }
-/*  navegador  */
+body{
+    width: 100%;
+    height: 100vh;
+
+}
+/* navegador */
 .header{
-    background-color: rgb(56, 57, 112);
     width: 100%;
     height: 71px;
     display:flex;
+    background: linear-gradient(to top, #000000, #434343); 
+    
 }
-.h__img{
+.h__a-img{
     border-radius: 50px;
     width: 30px;
     height: 30px;
@@ -49,13 +56,13 @@ ul li{
 }
 /* main general */
 .main{
-    background-color: #FFff;
+    background: linear-gradient(to bottom, #c9d6ff, #e2e2e2);
     width: 100%;
     display: flex;
 }
 /* main equipos */
 .main-equipo{
-    background-color: #ffffff;
+    background-color: #282634;
     width: 100%;
     display: flex;
 }
@@ -63,14 +70,14 @@ ul li{
 .main-contacto{
     width: 100%;
     height: 674px;
-    background-image: url(/img/dj2.jpg);
-    background-size: cover;
+    background: linear-gradient(to bottom, #4b79a1, #283e51);
+    position: relative;
 }
 /* main de inicio */
 .main-inicio{
     width: 100%;
     height: 674px;
-    background-color: #655DBB;
+    background: linear-gradient(to top, #e0eafc, #cfdef3);
 
 }
 /* video dentro de main */
@@ -85,6 +92,7 @@ ul li{
     width: 100%;
     height: 674px;
     background-color:#655DBB ;
+    background: linear-gradient(to top, #efefbb, #d4d3dd);
 }
 /* section de nosotros */
 .section-nos{
@@ -104,7 +112,7 @@ ul li{
     font-size: 30px;
     font-style:italic;
 
-    color: rgb(255, 255, 255);
+    color: rgb(17, 4, 4);
     margin-left: 25px;
     margin-top: 30px;
 }
@@ -114,74 +122,104 @@ ul li{
     align-items: center;
     display: inline;
 }
-.p{
+/* párrafo en general  */
+.p, .p-1, .p-2, .p-3, .p-4, .p-5, .p-6, .p-7, .p-8, .p-9{
     padding: 10px;
     margin: 10px;
-    background-color:  rgb(56, 57, 112);
+    background: linear-gradient(to top, #000000, #434343);
     border-radius: 20px;
     color: rgb(255, 255, 255);
     font-size: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
 }
 .section__div{
     padding-left: 0px;
-    
 }
+
 /* div de equipos */
-.div__equipo{
-    padding-top: 60px;
-    display:flex;
+
+.div__equipo-1{
+    display: flex;
 }
 .div__equipo-2{
-    padding-top: 200px;
-    display:flex;
+    display: flex;
 }
 .div__equipo-3{
-    padding-top: 200px;
-    padding-bottom: 50px;
-    display:flex;
+    display: flex;
+}
+.p-1{
+    margin-top: 0px;
+}
+.p-2{
+    
+} 
+/* card equipo */
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px 0 rgb(136, 135, 135);
+}
+.card:hover {
+    transform: translateY(-5%) ;
+}
+/* imagenes equipos */
+.img__div{
+    height:auto;
+    max-width: 100%;
+}
+.img__div-luz{
+    max-width: 100%;
+    height: 360px;
+}
+.img__div-pantalla{
+    max-width: 100%;
+    height: 440px;
+}
+.section{
+    color: white;
 }
 /* imagenes de eventos */
 
 .img__cumple ,.img__aleyflor,.img__aleydai, .img__joseyanto, .img__egresado, .img__ceats{
     width: 300px;
     padding-right: 10px;
+    padding-left: 20px;
 }
 .img__cumple-18{
     padding-right: 10px;
     width: 300px;
     height: 169px;
+    padding-left: 20px;
 }
 .img__aleyflor-bodega{
     width: 300px;
     height: 400px;
     padding-right:10px ;
+    padding-left: 20px;
 }
 .img__ceats-evento{
     width: 300px;
     height: 225px;
     padding-right:10px ;
-}
-/* imagenes equipos */
-.img__div{
-    width: 250px;
-    height: 200px;
-}
-.img__div-parlante{
-    width: 300px;
-    height: 350px;
+    padding-left: 20px;
 }
 
-
-.section{
-    color: white;
-}
 /* formulario contacto */
 .form{
-    background-color: rgb(56, 57, 112);
+    background:#2b2727;
+    position: absolute;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 16%;
+    top: 7.5%;
     left: 20%;
     padding: 50px 55px;
     text-align: center;
@@ -233,10 +271,10 @@ label {
 }
 /* footer */
 .footer{
-    background-color: rgb(56, 57, 112);
     width: 100%;
     height: 44px;
     bottom: 0%;
+    background: linear-gradient(to top, #000000, #434343); 
 }
 /* div del footer */
 .f__div{
@@ -251,4 +289,16 @@ label {
 .arriba{
     position:absolute;
     right: 0px;
+}
+/* quarie de tablet */
+@media screen and (max-width:991px){
+
+}
+/* media quaries desktop firts */
+/* seria para mobile esta parte */
+@media screen and (max-width:576px){
+    header{
+        flex-wrap: wrap;
+
+    }
 }
