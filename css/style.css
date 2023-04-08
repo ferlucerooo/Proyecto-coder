@@ -182,11 +182,13 @@ ul li{
     background: linear-gradient(to bottom, #4b79a1, #283e51);
 }
 /* formulario contacto */
-.form{
-    background: linear-gradient(to top, #000000, #434343);
+.div-contact{
     display: grid;
     width: 60%;
     margin: auto;
+}
+.form{
+    background: linear-gradient(to top, #000000, #434343);
     padding: 60px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px 0 rgb(41, 40, 40);
@@ -248,14 +250,14 @@ label {
 }
 /* text de inicio */
 .h1{
-    color: #ffffff;
+    color: #c55858;
     font-size: 70px;
     align-self: end;
     font-family:'Indie Flower',Arial, Helvetica, sans-serif;
 
 }
 .h4{
-    color: #ffffff;
+    color: #c55858;
     font-size: 50px;
     align-self: start;
     font-family:'Indie Flower',Arial, Helvetica, sans-serif;
@@ -273,6 +275,7 @@ label {
     background: linear-gradient(to top, #efefbb, #d4d3dd);
 }
 /* section de nosotros */
+
 .section-nos{
     display:grid;
     grid-template-columns: auto auto;
@@ -290,7 +293,7 @@ label {
     align-self: center;
 }
 .section__p{
-    font-size: 30px;
+    font-size: 26px;
     font-style:italic;
     color: rgb(17, 4, 4);
     align-self: center;
@@ -383,14 +386,12 @@ label {
         grid-row: auto auto;
     }
     .section__img{
-        justify-self: center;
         margin-top: 10px;
-        width: 700px;
+        width: 600px;
         height: 400px;
     }
     .section__p{
         margin-left: 20px;
-        justify-self: center;
         margin-top: 30px;
         font-size: 22px;
     }
@@ -433,6 +434,17 @@ label {
         padding: 10px 0 10px 10px;
         width: 200px;
         height: 200px;
+    }
+    /* contacto */
+    .form__h1{
+        font-size: 26px;
+    }
+    input, textarea{
+        font-size: 10px;
+        padding: 2px;
+    }
+    label {
+        font-size: 14px;
     }
 }
 
@@ -488,14 +500,12 @@ label {
         grid-row: auto auto;
     }
     .section__img{
-        justify-self: center;
-        margin-top: 10px;
+        margin-top: 30px;
         width: 400px;
         height: 300px;
     }
     .section__p{
-        justify-self: center;
-        margin-top: 10px;
+        margin-top: 50px;
         font-size: 22px;
     }
     /* equipo */
@@ -535,7 +545,7 @@ label {
         padding-bottom: 15px;
     }
     /* contacto */
-    .form{
+    .div-contact{
         width: 80%;
     }
 }
