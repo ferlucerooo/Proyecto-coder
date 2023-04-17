@@ -1,0 +1,192 @@
+@media screen and (max-width:991px){
+    //header, falta hacer funcionar el checkbox
+    .header{
+        display: flex;
+        justify-content: space-around;
+        .h__img{
+            margin-right: 700px;
+        }
+        .hmenu{
+            .label__menu{
+                color: $Wcolor;
+                font-size: 28px;
+                align-items: center;
+            }
+            .inputmenu{
+                display: block;
+            }
+            .inputmenu:checked + nav {
+                transform: translateX(-20px);
+            } 
+        }
+        
+        .nav{
+            transform: translateX(-991px);
+            transition: 1s;
+            position: absolute; 
+            background-color: #030000;
+            top: 60px;
+            height: 100vh;
+            width: 90%;
+            .nav__ul{
+            }
+            nav li{
+                display: block;
+                margin: 40px 0;
+                line-height: 40px;
+                text-align: start;
+                .nav__a{
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                
+            }
+            
+        }
+        
+    }
+//nosotros
+    .main-nosotros{
+        .section-nos{
+            grid-template-columns: auto;
+            grid-row: auto auto;
+            .div-nos{
+                .section__img{
+                    margin-top: 10px;
+                    width: 600px;
+                    height: 400px;
+                }
+                .section__p{
+                    margin-left: 20px;
+                    margin-top: 30px;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+// contacto
+    .main-contacto{
+        .div-contact{
+            .form{
+                .form__h2{
+                    font-size: 26px;
+                }
+                .form__input{
+                    input, textarea{
+        font-size: 10px;
+        padding: 2px;
+    }
+    label {
+        font-size: 14px;
+    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:480px){
+//header, falta hacer funcionar el checkbox
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .h__img{
+        margin-right: 200px;
+    }
+    .hmenu{
+        .label__menu{
+            color: $Wcolor;
+            font-size: 28px;
+            align-items: center;
+        }
+        .inputmenu{
+            display: block;
+        }
+        .inputmenu:checked + nav {
+            transform: translateX(-20px);
+        } 
+    }
+    .nav{
+        transform: translateX(-480px);
+        transition: 1s;
+        position: absolute; 
+        background-color: #030000;
+        top: 60px;
+        height: 100vh;
+        width: 90%;
+        .nav__ul{
+        }
+        nav li{
+            display: block;
+            margin: 40px 0;
+            line-height: 40px;
+            text-align: start;
+            .nav__a{
+                font-size: 20px;
+                font-weight: 600;
+            }       
+        }
+    }
+}
+//nosotros
+.main-nosotros{
+    .section-nos{
+        grid-template-columns: auto;
+        grid-row: auto auto;
+        .div-nos{
+            .section__img{
+                margin-top: 30px;
+                width: 400px;
+                height: 300px;
+            }
+            .section__p{
+                margin-top: 50px;
+                font-size: 22px;
+            }
+        }
+    }
+}
+//evento
+.main{
+    .section{
+        .p{
+        }
+        .section__div{
+            display: grid;
+            justify-self: center;
+            .img__evento,.img__ceats{
+                margin: 5px 0;
+            }
+        }
+    }
+}
+//equipo
+.main-equipo{
+    .section{
+        grid-template-columns: 300px;
+        .card{
+            height: 560px;
+            .img__div{
+            }
+            .c__p{
+            }
+        }
+    }
+}
+// contacto
+.main-contacto{
+    .div-contact{
+        width: 80%;
+        .form{
+            .form__h2{
+            }
+            .form__input{
+                input, textarea{
+                label {
+                    }
+            }
+        }
+    }
+}
+}
+}

@@ -1,0 +1,25 @@
+.main-inicio{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/night.jpg);
+    background-size: cover;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    .hh{
+        color:$Rcolor;
+        font-size: 70px;
+        align-self: end;
+        font-family:'Indie Flower',Arial, Helvetica, sans-serif;
+        animation-duration: 5s;
+        animation-delay: .5s;
+    }
+    .hhh{
+        color: $Rcolor;
+        font-size: 50px;
+        align-self: start;
+        font-family:'Indie Flower',Arial, Helvetica, sans-serif;
+        animation-duration: 5s;
+        animation-delay: .5s;
+    }
+}

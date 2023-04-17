@@ -1,0 +1,56 @@
+.main-contacto{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background: $Cgradient;
+    .div-contact{
+        display: grid;
+        width: 60%;
+        margin: auto;
+        .form{
+            background: $HFgradient;
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 10px 0 rgb(41, 40, 40);
+            .form__h2{
+                color: $Wcolor;
+                font-size: 40px;
+            }
+            .form__input{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                span {
+                    color: $Rcolor;
+                }
+                input, textarea{
+                    padding: 5px;
+                    border-radius: 2px;
+                    border: 2px solid, $Wcolor;
+                    outline: none;
+                    margin-bottom: 10px;
+                }
+                label {
+                    color: $Wcolor;
+                    font-size: 15px;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                }
+                .form__enviar{
+                    margin-top: 20px;
+                    color: $Wcolor;
+                    border-radius: 20px;
+                    height: 30px;
+                    font-size: 17px;
+                    border:0 ;
+                    background-color: rgb(177, 19, 19);
+                    cursor: pointer;
+                    &:hover.form__enviar:hover{
+                        background: $Rcolor;
+                        }
+                }
+                
+            }
+        }
+    }
+}
