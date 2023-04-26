@@ -1,50 +1,20 @@
 @media screen and (max-width:991px){
-    //header, falta hacer funcionar el checkbox
-    .header{
-        display: flex;
+    //header
+.navbar{
+    .container-fluid{
         justify-content: space-around;
         .h__img{
-            margin-right: 700px;
+            margin-right: 600px;
         }
-        .hmenu{
-            .label__menu{
-                color: $Wcolor;
-                font-size: 28px;
-                align-items: center;
+        .div__nav{
+            z-index: 10;
+            .navbar-nav{
+                margin-top: -10px;
+                background: $HFgradient;
             }
-            .inputmenu{
-                display: block;
-            }
-            .inputmenu:checked + nav {
-                transform: translateX(-20px);
-            } 
         }
-        
-        .nav{
-            transform: translateX(-991px);
-            transition: 1s;
-            position: absolute; 
-            background-color: #030000;
-            top: 60px;
-            height: 100vh;
-            width: 90%;
-            .nav__ul{
-            }
-            nav li{
-                display: block;
-                margin: 40px 0;
-                line-height: 40px;
-                text-align: start;
-                .nav__a{
-                    font-size: 20px;
-                    font-weight: 600;
-                }
-                
-            }
-            
-        }
-        
     }
+}
 //nosotros
     .main-nosotros{
         .section-nos{
@@ -64,75 +34,42 @@
             }
         }
     }
+//eventos
+.section__div{
+    .img__ceats,.img__evento,.img__cumple,.img__aleyflor{
+        margin-bottom: 10px;
+    }
+}
 // contacto
-    .main-contacto{
-        .div-contact{
-            .form{
-                .form__h2{
-                    font-size: 26px;
-                }
-                .form__input{
-                    input, textarea{
-        font-size: 10px;
-        padding: 2px;
-    }
-    label {
-        font-size: 14px;
-    }
-                }
+.div-contact{
+    .form{
+        .form__h2{
+            font-size: 26px;
+        }
+        .form__input{
+            input, textarea{
+                font-size: 10px;
+                padding: 2px;
+            }
+            label {
+                font-size: 14px;
             }
         }
     }
 }
+}
 @media screen and (max-width:480px){
-//header, falta hacer funcionar el checkbox
-.header{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    .h__img{
-        margin-right: 200px;
-    }
-    .hmenu{
-        .label__menu{
-            color: $Wcolor;
-            font-size: 28px;
-            align-items: center;
-        }
-        .inputmenu{
-            display: block;
-        }
-        .inputmenu:checked + nav {
-            transform: translateX(-20px);
-        } 
-    }
-    .nav{
-        transform: translateX(-480px);
-        transition: 1s;
-        position: absolute; 
-        background-color: #030000;
-        top: 60px;
-        height: 100vh;
-        width: 90%;
-        .nav__ul{
-        }
-        nav li{
-            display: block;
-            margin: 40px 0;
-            line-height: 40px;
-            text-align: start;
-            .nav__a{
-                font-size: 20px;
-                font-weight: 600;
-            }       
+//header
+.navbar{
+    .container-fluid{
+        .h__img{
+            margin: 0;
         }
     }
 }
 //nosotros
 .main-nosotros{
     .section-nos{
-        grid-template-columns: auto;
-        grid-row: auto auto;
         .div-nos{
             .section__img{
                 margin-top: 30px;
@@ -149,11 +86,9 @@
 //evento
 .main{
     .section{
-        .p{
-        }
+        
         .section__div{
             display: grid;
-            justify-self: center;
             .img__evento,.img__ceats{
                 margin: 5px 0;
             }
@@ -166,10 +101,6 @@
         grid-template-columns: 300px;
         .card{
             height: 560px;
-            .img__div{
-            }
-            .c__p{
-            }
         }
     }
 }
@@ -177,16 +108,6 @@
 .main-contacto{
     .div-contact{
         width: 80%;
-        .form{
-            .form__h2{
-            }
-            .form__input{
-                input, textarea{
-                label {
-                    }
-            }
-        }
-    }
 }
 }
 }

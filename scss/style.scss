@@ -4,6 +4,15 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+.gridcenter{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+@mixin sizes($width, $height){
+    height: $height;
+    width: $width;
+}
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import 'variables';
 @import 'header';
@@ -14,3 +23,4 @@
 @import 'contacto';
 @import 'footer';
 @import 'quaries';
+

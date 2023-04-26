@@ -2,9 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Amancay</title>
+    <title>Amancay | Equipos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" href="../img/logo.png">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="../css/style.css">
     <link
     rel="stylesheet"
@@ -15,71 +19,80 @@
 <body>
   <div id="arriba"></div>
   <header class="header"> <!-- encabezado -->
-    <a class="a__h1" href="../index.html"><h1 class="h__h1">Amancay</h1> </a>
-    <img class="h__img" src="../img/logo.png" alt="Logo"> <!--logo-->
-      <!-- hamburger menu -->
-    <form class="hmenu">
-      <label for="menu" class="label__menu">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-      <input type="checkbox" id="menu" class="inputmenu">
-    </form>
-
-    <nav class="nav"><!-- navegador -->
-      <ul class="nav__ul">
-        <li><a href="../index.html" class="nav__a">Inicio</a></li>
-        <li><a href="./nosotros.html" class="nav__a">Nosotros</a></li>
-        <li><a href="./eventos.html" class="nav__a">Eventos</a></li>
-        <li><a href="equipos.html" class="nav__a">Equipos disponibles</a></li>
-        <li><a href="./contactos.html" class="nav__a">Contacto</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><h1>Amancay</h1></a>
+        <img class="h__img" src="../img/logo.png" alt="Logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse div__nav" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./eventos.html">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipos.html">Equipos disponibles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactos.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav> 
   </header>  
       
   <main class="main-equipo"><!--contenido principal-->
     <section class="section">
           <div class="card"> <!-- card1 -->
-            <img class="img__div" src="../img/Consola De Sonido Mixer Dj 100w Sonido Audio Moon M410.png" alt="equipo"> 
+            <img class="img__div" src="../img/Consola De Sonido Mixer Dj 100w Sonido Audio Moon M410.png" alt="consola de sonido"> 
             <p class="c__p">Consola de sonido mixer dj audio moon MA10</p>
           </div>
 
           <div class="card"> <!-- card2 -->
-            <img class="img__div" src="../img/controlador DJ Pioneer DDJ-400 negro de 2 canales.png" alt="equipo">
+            <img class="img__div" src="../img/controlador DJ Pioneer DDJ-400 negro de 2 canales.png" alt="controlador dj">
             <p class="c__p">Controlador dj pioneer DDJ-400 2 canales</p>
           </div>
           <div class="card"> <!-- card3 -->
-            <img class="img__div" src="../img/E-sound Eqx 10 Bafle 10 300w Rms Full Range Sonido Dj.png" alt="equipo">
+            <img class="img__div" src="../img/E-sound Eqx 10 Bafle 10 300w Rms Full Range Sonido Dj.png" alt="parlante eqx">
             <p class="c__p">E-sound Eqx 10 Bafle 10 300w Rms Full Range Sonido Dj</p>
           </div>
 
           <div class="card"> <!-- card4 -->
-            <img class="img__div" src="../img/Gadnic BT408 mic.png" alt=""> 
+            <img class="img__div" src="../img/Gadnic BT408 mic.png" alt="microfonos gadnic"> 
             <p class="c__p">Microfonos Gadnic BT408</p>
           </div> 
         
           <div class="card"> <!-- card5 -->
-            <img class="img__div" src="../img/Laser Lluvia Multipunto Led Audioritmico Colores Fiesta Dj.png" alt="equipo"> 
+            <img class="img__div" src="../img/Laser Lluvia Multipunto Led Audioritmico Colores Fiesta Dj.png" alt="laser de lluvia"> 
             <p class="c__p"> Laser Lluvia Multipunto Led Audioritmico Colores Fiesta</p>
           </div>
 
           <div class="card"> <!-- card6 -->
-            <img class="img__div-luz" src="../img/Luz Proton Par 36 Luces Dj Audioritmica Dmx Iluminacion Led.png" alt="equipo"> 
+            <img class="img__div-luz" src="../img/Luz Proton Par 36 Luces Dj Audioritmica Dmx Iluminacion Led.png" alt="luz proton de 36 luces"> 
             <p class="c__p">Luz Proton Par 36 Luces Dj Audioritmica Dmx Iluminacion Led</p>
           </div>
 
 
           <div class="card">  <!-- card7 -->
-            <img class="img__div" src="../img/Máquina de humo Venetian F-800 color negro 220V - 250V.png" alt="equipo"> 
+            <img class="img__div" src="../img/Máquina de humo Venetian F-800 color negro 220V - 250V.png" alt="máquina de humo"> 
             <p class="c__p">Máquina de humo Venetian F-800</p>
           </div>
         
           <div class="card"> <!-- card8 -->  
-            <img class="img__div-pantalla" src="../img/Pantalla Loch Con Trípode 100 Pulgadas Proyector .png" alt="equipo"> 
+            <img class="img__div-pantalla" src="../img/Pantalla Loch Con Trípode 100 Pulgadas Proyector .png" alt="pantalla para proyector"> 
             <p class="c__p"> Pantalla Loch Con Trípode 100 Pulgadas Proyector</p>
           </div>
 
           <div class="card"> <!-- card9 -->
-            <img class="img__div" src="../img/Proyector Led Potente Full Hd 4k Hdmi Vga Usb Wifi Android.png" alt="equipo"> 
+            <img class="img__div" src="../img/Proyector Led Potente Full Hd 4k Hdmi Vga Usb Wifi Android.png" alt="proyector led full hd 4k"> 
             <p class="c__p">Proyector Led Potente Full Hd 4k Hdmi Vga Usb Wifi Android</p>
           </div>
     </section>
@@ -88,10 +101,10 @@
   <footer class="footer"> <!--pie de pagina-->
     <div class="f__div"><!--Redes-->
       &copy;
-      <a class="div__a" href="http://www.instagram.com/fernandolucerooo" target="_blank"><img class="div__a" src="../img/instagram.png" ></a>
-      <a class="div__a" href="http://www.facebook.com/fercjs14" target="_blank"><img class="div__a" src="../img/facebook.png" ></a>
-      <a class="div__a" href="https://api.whatsapp.com/send?phone=2616319693" target="_blank"><img class="div__a" src="../img/whatsapp.png" ></a>
-      <a class="arriba" href="#arriba"><img class="div__a" src="../img/flecha-arriba.png" ></a>
+      <a class="div__a" href="http://www.instagram.com/fernandolucerooo" target="_blank"><img class="div__a" src="../img/instagram.png" alt="ig"></a>
+      <a class="div__a" href="http://www.facebook.com/fercjs14" target="_blank"><img class="div__a" src="../img/facebook.png" alt="fb"></a>
+      <a class="div__a" href="https://api.whatsapp.com/send?phone=2616319693" target="_blank"><img class="div__a" src="../img/whatsapp.png" alt="wsp"></a>
+      <a class="arriba" href="#arriba"><img class="div__a" src="../img/flecha-arriba.png" alt="arriba"></a>
     </div>
   </footer>
 </body>
