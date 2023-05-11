@@ -18,11 +18,12 @@
 //nosotros
     .main-nosotros{
         .section-nos{
-            grid-template-columns: auto;
-            grid-row: auto auto;
+            /* grid-template-columns: auto;
+            grid-row: auto auto; */
             .div-nos{
                 .section__img{
                     margin-top: 10px;
+                    margin-left: 50px;
                     width: 600px;
                     height: 400px;
                 }
@@ -73,6 +74,7 @@
         .div-nos{
             .section__img{
                 margin-top: 30px;
+                margin-left: 20px;
                 width: 400px;
                 height: 300px;
             }
