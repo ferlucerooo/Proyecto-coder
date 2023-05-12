@@ -1,3 +1,21 @@
+@media screen and (max-width:2560px) {
+// equipo
+.main-equipo{
+        .card{
+            .img__div{
+                width: 400px;
+                height: 200px;
+            }
+            .img__esound{
+                width: 200px;
+                height: 50px;
+            }
+            .c__p{
+                margin: 0;
+                font-size: 4px;
+            }
+        }
+}}
 @media screen and (max-width:991px){
     //header
 .navbar{
